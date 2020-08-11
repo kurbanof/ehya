@@ -1,0 +1,170 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    mix-blend-mode: normal
+    background-color: #000000d4
+    z-index: 1000
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      opacity: 1
+      visibility: visible
+
+  &__dialog
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 488px
+    padding: 48px 64px
+    background-color: $w
+    transform: translate(-50%, -50%)
+    color: $w
+    border-radius: 12px
+    z-index: 1001
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      opacity: 1
+      visibility: visible
+  &__close
+    position: absolute
+    right: 24px
+    top: 24px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    color: $btc
+    margin: 0
+    font-family: $title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    text-align: center
+    margin-bottom: 35px
+  &__input
+    border: 1px solid #C3CAD9
+    box-sizing: border-box
+    border-radius: 8px
+    width: 100%
+    padding: 17px 0 17px 20px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $btc
+    
+
+  &__button
+    &-signup
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 360px
+      min-height: 56px
+      padding: 0 76px 0 8px
+      background-color: $primary
+      color: $w
+      border: none
+      border-radius: 8px
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      margin-bottom: 32px
+      
+  &__google
+    &-icon
+      width: 42px
+      height: 42px
+      object-fit: cover
+  &__span
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $tc
+    margin-bottom: 12px
+    display: block
+    &:nth-child(n+2)
+      margin-top: 24px
+    &-sign
+      margin-bottom: 35px
+      color: $btc
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+  &__agreement
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $tc
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    margin-top: 24px
+    position: relative
+  &__button
+    border: none
+    border-radius: 8px
+    background-color: $primary
+    color: $w
+    text-align: center
+    width: 100%
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    height: 56px
+    margin-bottom: 24px
+  &__account
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $tc
+    &-link
+      text-decoration: none
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      color: $primary
+      margin-left: 8px
+  &__checkbox
+    margin-right: 10px
+   
+   
+.Invalid
+  color: red
+
+#checkbox-error
+  color: red
+  position: absolute
+  top: 22px
+  left: 0
+  right: 0
+  bottom: 0
+  
+
+
