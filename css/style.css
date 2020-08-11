@@ -474,6 +474,7 @@ button {
 }
 
 .hero-button__git {
+  text-decoration: none;
   background-color: #ffffff;
   color: #1565D8;
   border: none;
