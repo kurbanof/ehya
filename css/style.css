@@ -378,6 +378,10 @@ button {
   outline: none;
 }
 
+label {
+  cursor: pointer;
+}
+
 .blue-text {
   font-family: Open Sans;
   font-style: normal;
@@ -625,6 +629,7 @@ button {
       -ms-flex-align: start;
           align-items: start;
   z-index: 10;
+  width: 466px;
 }
 
 .hero-wave__card_left {
@@ -824,7 +829,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
-  top: 50%;
+  top: 490px;
   left: 50%;
   max-width: 488px;
   padding: 48px 64px;
