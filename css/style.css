@@ -673,6 +673,7 @@ button {
   text-align: center;
   display: block;
   margin-bottom: 141px;
+  text-decoration: none;
 }
 
 .quickstart {
@@ -720,11 +721,14 @@ button {
   font-weight: 600;
   color: #5A7184;
   margin-bottom: 31px;
-  opacity: 1;
+}
+
+.tabs__item:hover {
+  background-color: #ffffff;
+  color: #183B56;
 }
 
 .tabs__item_active {
-  opacity: 2;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   background: #ffffff;
@@ -760,7 +764,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 2%;
+  margin-left: 9%;
 }
 
 .version__text {

@@ -5,6 +5,7 @@
   text-align: center
   display: block
   margin-bottom: 141px
+  text-decoration: none
 
 .quickstart
   padding: 16px 0 97px 0
@@ -40,9 +41,10 @@
     font-weight: 600 
     color: #5A7184
     margin-bottom: 31px
-    opacity: 1
+    &:hover
+      background-color: $w
+      color: #183B56
     &_active
-      opacity: 2
       transition: opacity 0.2s
       background: $w
       color: #183B56
@@ -68,7 +70,7 @@
 
 .version
   display: flex
-  margin-left: 2%
+  margin-left: 9%
   
   &__text
     font-family: Open Sans
