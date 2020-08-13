@@ -31,29 +31,7 @@
     justify-content: space-between
     padding: 26px 0
     margin-bottom: 96px
-  &-navbar
-    width: 598px
-    display: flex
-    justify-content: space-between
-    &__list
-      width: 423px
-      list-style: none
-      margin: 0
-      padding: 18px 0
-      display: flex
-      align-items: center
-      justify-content: space-between
-      margin-right: px
-    &__button
-      padding: 13px 24px  
-      color: white
-      font-weight: bold
-      background-color: $primary
-      border: 2px solid white
-      border-radius: 8px
-    &__link
-      text-decoration: none
-      color: white
+  
   &__title
     margin: 0
     margin-bottom: 24px
@@ -159,4 +137,100 @@
       left: 0
       right: 0
       z-index: 5
-  
+.menu
+  width: 598px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__list
+    display: flex
+    width: 423px
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__link
+    text-decoration: none
+    color: white
+  &__item
+    position: relative
+  &__button
+    padding: 13px 24px
+    color: white
+    font-weight: bold
+    background-color: $primary
+    border: 2px solid white
+    border-radius: 8px
+  &__sub
+    &-wrapper
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      padding: 32px
+      border-radius: 12px
+      background: #FFFFFF
+    &-list
+      position: absolute
+      margin: 0
+      padding: 0
+      top: 20px
+      left: 0
+      width: 260px
+      height: 338px
+      opacity: 0
+      visibility: hidden
+      transition: 0.2s
+      padding-top: 24px
+
+    &-item
+      list-style: none
+      position: relative
+      margin-bottom: 12px
+      &:last-child
+        margin-bottom: 0
+    &-link
+      text-decoration: none
+      color: $btc
+      &:hover
+        font-weight: 600
+        color: #1565D8
+        
+    &-sub
+      &-list
+        position: absolute
+        top: 0
+        left: 100%
+        width: 260px
+        margin: 0
+        padding: 0
+        opacity: 0
+        visibility: hidden
+        transition: 0.2s
+        box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+        padding: 32px
+        border-radius: 12px
+        background: #FFFFFF
+        
+      &-item
+        list-style: none
+        position: relative
+        margin-bottom: 12px
+        &:last-child
+          margin-bottom: 0
+      &-link
+        text-decoration: none
+        color: $btc
+        &:hover
+          font-weight: 600
+          color: #1565D8
+
+.landings:hover
+  .menu__sub-list
+    opacity: 1
+    visibility: visible
+
+.sub-list:hover
+  .menu__sub-sub-list
+    opacity: 1
+    visibility: visible
+

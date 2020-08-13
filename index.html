@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fixes.css">
   </head>
   <body>
     <section class="hero">
@@ -28,25 +29,79 @@
         
           <div class="hero-header">
             <a href="#"><img src="img/Logo.svg" alt="logo: ehya" class="logo hero__logo" /></a>
-            <nav class="hero-navbar">
-              <ul class="hero-navbar__list">
-                <li class="hero-navbar__item">
-                  <a href="#" class="hero-navbar__link">Home</a>
+            <nav class="hero-navbar menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
                 </li>
-                <li class="hero-navbar__item">
-                  <a href="#" class="hero-navbar__link">Landings</a>
+                <li class="menu__item landings">
+                  <a href="#" class="menu__link">Landings</a>
+                  <ul class="menu__sub-list">
+                    <div class="menu__sub-wrapper">
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Services</a>
+                        <ul class="menu__sub-sub-list">
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Software Library</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Insurance</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Converence</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Rental</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Products</a>
+                      <ul class="menu__sub-sub-list">
+                        <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Software Library</a></li>
+                        <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Insurance</a></li>
+                        <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Converence</a></li>
+                        <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Rental</a></li>
+                      </ul></li>
+                    </div>
+                  </ul>
                 </li>
-                <li class="hero-navbar__item">
-                  <a href="#" class="hero-navbar__link">Pages</a>
+                <li class="menu__item landings">
+                  <a href="#" class="menu__link">Pages</a>
+                  <ul class="menu__sub-list">
+                    <div class="menu__sub-wrapper">
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Company</a>
+                        <ul class="menu__sub-sub-list">
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Software Library</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Insurance</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Converence</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Rental</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Career</a>
+                        <ul class="menu__sub-sub-list">
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Software Library</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Insurance</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Converence</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Rental</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Blog</a></li>
+
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Utility - Sign in</a>
+                        <ul class="menu__sub-sub-list">
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Basic</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Right Cover</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Left Cover</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Modal</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Illustration</a></li>
+                          <li class="menu__sub-sub-item"><a href="" class="menu__sub-sub-link">Illustration</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Utility - Sign up</a></li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Utility - Password Reset</a></li>
+                      <li class="menu__sub-item sub-list"><a href="#" class="menu__sub-link ">Utility - Error 404</a></li>
+                    </div>
+                  </ul>
                 </li>
-                <li class="hero-navbar__item">
-                  <a href="#" class="hero-navbar__link">Docs</a>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Docs</a>
                 </li>
-                <li class="hero-navbar__item">
-                  <a href="#" class="hero-navbar__link">Help</a>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Help</a>
                 </li>
               </ul>
-              <button class="hero-navbar__button" data-toggle="modal">Get it now</button>
+              <button class="menu__button" data-toggle="modal">Get it now</button>
             </nav>
             <!-- /.navbar -->
           </div>
