@@ -1,24 +1,25 @@
 .hero
-  // position: absolute
-  background-image: url(../img/Wave.svg)
+  position: relative
+  background-image: url(../img/Wave.svg), url(../img/Shape-1.svg)
   background-repeat: no-repeat
-  background-position-x: center
+  background-position-x: center, 9%
   background-color: $primary
-  background-position-y: 610px
-  background-size: 1440px
-  z
+  background-position-y: 610px, 297px
+  background-size: 1920px, 620px 376px
+  overflow: hidden
+  
 
   &-main
     position: relative
-    
-  &-bcg
-    &__left
+  &__bcg
+    &-left
       position: absolute
       width: 620.16px
       height: 376.86px
       left: -226.88px
       top: 303.87px
-    &__right
+      overflow: hidden
+    &-right
       position: absolute
       width: 300px
       height: 285px
@@ -30,8 +31,9 @@
     align-items: center
     justify-content: space-between
     padding: 26px 0
+    margin: auto
     margin-bottom: 96px
-  
+   
   &__title
     margin: 0
     margin-bottom: 24px
@@ -41,13 +43,14 @@
     color: white
     text-align: center
     max-width: 946px
-    margin: auto
   &__text
     font-weight: normal
     font-size: 20px
     line-height: 36px
     text-align: center
     color: $w
+    margin: 0
+    margin-bottom: 40px
   &-button
     display: flex
     align-items: center
@@ -95,7 +98,6 @@
     justify-content: center
     align-items: center
     position: relative
-    
     background-position: center
     background-position-y: 0%
     background-size: cover
@@ -113,11 +115,12 @@
       &_left
         margin-right: 16px
     &__title
+      font-style: normal
       font-weight: bold
-      font-size: 22px
+      font-size: 20px
       line-height: 33px
       letter-spacing: 0.2px
-      color: $btc
+      color: #183B56
       margin: 0
       margin-bottom: 4px
     &__text
@@ -177,20 +180,22 @@
       left: 0
       width: 260px
       height: 338px
-      opacity: 0
-      visibility: hidden
-      transition: 0.2s
+      // opacity: 0
+      // visibility: hidden
+      // transition: 0.2s
       padding-top: 24px
-
     &-item
       list-style: none
       position: relative
-      margin-bottom: 12px
+      margin-bottom: 24px
       &:last-child
         margin-bottom: 0
     &-link
       text-decoration: none
       color: $btc
+      display: flex
+      align-items: center
+      justify-content: space-between
       &:hover
         font-weight: 600
         color: #1565D8
@@ -198,13 +203,13 @@
     &-sub
       &-list
         position: absolute
-        top: 0
-        left: 100%
-        width: 260px
+        top: -8px
+        left: 104%
+        width: 242px
         margin: 0
         padding: 0
-        opacity: 0
-        visibility: hidden
+        // opacity: 0
+        // visibility: hidden
         transition: 0.2s
         box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
         padding: 32px
@@ -214,12 +219,13 @@
       &-item
         list-style: none
         position: relative
-        margin-bottom: 12px
+        margin-bottom: 15px
         &:last-child
           margin-bottom: 0
       &-link
         text-decoration: none
         color: $btc
+        
         &:hover
           font-weight: 600
           color: #1565D8
@@ -233,4 +239,3 @@
   .menu__sub-sub-list
     opacity: 1
     visibility: visible
-

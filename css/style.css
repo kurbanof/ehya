@@ -382,6 +382,10 @@ label {
   cursor: pointer;
 }
 
+.mIcon {
+  border: 0.1px dashed #5A7184;
+}
+
 .blue-text {
   font-family: Open Sans;
   font-style: normal;
@@ -413,6 +417,7 @@ label {
   font-size: 18px;
   line-height: 32px;
   color: #5A7184;
+  margin: 0;
 }
 
 .mtext-center {
@@ -422,27 +427,30 @@ label {
 }
 
 .hero {
-  background-image: url(../img/Wave.svg);
+  position: relative;
+  background-image: url(../img/Wave.svg), url(../img/Shape-1.svg);
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: center, 9%;
   background-color: #1565D8;
-  background-position-y: 610px;
-  background-size: 1440px;
+  background-position-y: 610px, 297px;
+  background-size: 1920px, 620px 376px;
+  overflow: hidden;
 }
 
 .hero-main {
   position: relative;
 }
 
-.hero-bcg__left {
+.hero__bcg-left {
   position: absolute;
   width: 620.16px;
   height: 376.86px;
   left: -226.88px;
   top: 303.87px;
+  overflow: hidden;
 }
 
-.hero-bcg__right {
+.hero__bcg-right {
   position: absolute;
   width: 300px;
   height: 285px;
@@ -463,6 +471,7 @@ label {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 26px 0;
+  margin: auto;
   margin-bottom: 96px;
 }
 
@@ -475,7 +484,6 @@ label {
   color: white;
   text-align: center;
   max-width: 946px;
-  margin: auto;
 }
 
 .hero__text {
@@ -484,6 +492,8 @@ label {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .hero-button {
@@ -596,8 +606,9 @@ label {
 }
 
 .hero-wave__title {
+  font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   letter-spacing: 0.2px;
   color: #183B56;
@@ -693,17 +704,13 @@ label {
   left: 0;
   width: 260px;
   height: 338px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   padding-top: 24px;
 }
 
 .menu__sub-item {
   list-style: none;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .menu__sub-item:last-child {
@@ -713,6 +720,15 @@ label {
 .menu__sub-link {
   text-decoration: none;
   color: #183B56;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__sub-link:hover {
@@ -722,13 +738,11 @@ label {
 
 .menu__sub-sub-list {
   position: absolute;
-  top: 0;
-  left: 100%;
-  width: 260px;
+  top: -8px;
+  left: 104%;
+  width: 242px;
   margin: 0;
   padding: 0;
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
@@ -741,7 +755,7 @@ label {
 .menu__sub-sub-item {
   list-style: none;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .menu__sub-sub-item:last-child {
@@ -894,6 +908,61 @@ label {
   width: 24px;
   height: 24px;
   margin-right: 12px;
+}
+
+.library {
+  padding-top: 50px;
+}
+
+.js__text {
+  max-width: 750px;
+}
+
+.js__info {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 8px 8px 16px 16px;
+  width: 1088px;
+  padding: 48px 20px 45px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 3px solid #1565D8;
+}
+
+.js__card {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.js__card:nth-child(n+2) {
+  border-left: 1px solid #E5EAF4;
+}
+
+.js__card__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 .modal__overlay {
@@ -1110,5 +1179,42 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .menu__sub-sub-list {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
