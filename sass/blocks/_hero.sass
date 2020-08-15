@@ -35,7 +35,8 @@
     margin-bottom: 96px
    
   &__title
-    margin: 0
+    font-family: HKGroteskBold
+    margin: auto
     margin-bottom: 24px
     font-weight: bold
     font-size: 56px
@@ -43,6 +44,7 @@
     color: white
     text-align: center
     max-width: 946px
+    letter-spacing: 0.2px
   &__text
     font-weight: normal
     font-size: 20px
@@ -115,9 +117,10 @@
       &_left
         margin-right: 16px
     &__title
+      font-family: HKGroteskBold
       font-style: normal
       font-weight: bold
-      font-size: 20px
+      font-size: 22px
       line-height: 33px
       letter-spacing: 0.2px
       color: #183B56
@@ -157,6 +160,9 @@
   &__link
     text-decoration: none
     color: white
+    &:hover
+      text-decoration: none
+      color: $w
   &__item
     position: relative
   &__button
@@ -180,9 +186,9 @@
       left: 0
       width: 260px
       height: 338px
-      // opacity: 0
-      // visibility: hidden
-      // transition: 0.2s
+      opacity: 0
+      visibility: hidden
+      transition: 0.2s
       padding-top: 24px
     &-item
       list-style: none
@@ -208,8 +214,8 @@
         width: 242px
         margin: 0
         padding: 0
-        // opacity: 0
-        // visibility: hidden
+        opacity: 0
+        visibility: hidden
         transition: 0.2s
         box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
         padding: 32px
@@ -230,12 +236,12 @@
           font-weight: 600
           color: #1565D8
 
-.landings:hover
-  .menu__sub-list
-    opacity: 1
-    visibility: visible
+// .landings:hover
+//   .menu__sub-list
+//     opacity: 1
+//     visibility: visible
 
-.sub-list:hover
-  .menu__sub-sub-list
-    opacity: 1
-    visibility: visible
+// .sub-list:hover
+//   .menu__sub-sub-list
+//     opacity: 1
+//     visibility: visible
