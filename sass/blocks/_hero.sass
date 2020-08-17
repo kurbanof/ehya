@@ -1,14 +1,11 @@
 .hero
-  position: relative
-  background-image: url(../img/Wave.svg), url(../img/Shape-1.svg)
+  background-image: url(../img/Wave.svg)
   background-repeat: no-repeat
-  background-position-x: center, 9%
-  background-color: $primary
-  background-position-y: 610px, 297px
-  background-size: 1920px, 620px 376px
+  background-position-x: center
+  background-position-y: 610px
+  background-size: 1920px
   overflow: hidden
-  
-
+  background-color: $primary
   &-main
     position: relative
   &__bcg
@@ -16,16 +13,14 @@
       position: absolute
       width: 620.16px
       height: 376.86px
-      left: -226.88px
-      top: 303.87px
-      overflow: hidden
+      top: 303px
+      left: -269px
     &-right
       position: absolute
       width: 300px
       height: 285px
-      left: 1046.23px
-      top: 330.68px
-      transform: rotate(-15deg)
+      right: -104px
+      top: 307px
   &-header
     display: flex
     align-items: center
@@ -33,7 +28,6 @@
     padding: 26px 0
     margin: auto
     margin-bottom: 96px
-   
   &__title
     font-family: HKGroteskBold
     margin: auto
@@ -73,6 +67,7 @@
       align-items: center
       padding: 16px 27px 15px 37px
       margin-right: 16px
+      z-index: 999999999
     &__icon
       margin-right: 5px
     &__doc
@@ -163,6 +158,10 @@
     &:hover
       text-decoration: none
       color: $w
+    &_page-2
+      color: #183B56
+      &:hover
+        color: $primary
   &__item
     position: relative
   &__button
@@ -172,6 +171,11 @@
     background-color: $primary
     border: 2px solid white
     border-radius: 8px
+    &_page-2
+      border-color: $primary
+      border-radius: 50px
+      color: $primary
+      background-color: $w
   &__sub
     &-wrapper
       box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
@@ -235,7 +239,6 @@
         &:hover
           font-weight: 600
           color: #1565D8
-
 // .landings:hover
 //   .menu__sub-list
 //     opacity: 1
@@ -245,3 +248,11 @@
 //   .menu__sub-sub-list
 //     opacity: 1
 //     visibility: visible
+.header
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 26px 0
+    margin: auto
+    margin-bottom: 96px

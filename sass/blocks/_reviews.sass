@@ -1,18 +1,93 @@
 .reviews
+  position: relative
+  padding: 232px 0 152px 0
   background: #0D2436
-  padding-top: 170px
+  background-size: 1920px
+  background-image: url(../img/Wave-reviews.svg)
+  background-position-x: center
+  background-position-y: -70px
+  background-repeat: no-repeat
+
+
+
+.questions
+  min-height: 465px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 100%
+  margin-bottom: 136px
+  &-text
+    max-width: 507px
+    display: flex
+    flex-direction: column
+  &__have
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: #36B37E
+    margin-bottom: 16px
+  &__title
+    font-family: HKGroteskBold
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: #FFFFFF
+    max-width: 433px
+    margin-bottom: 27px
+  &__text
+    margin-bottom: 32px
+  &__info 
+    display: flex
+    align-items: start
+    &_first
+      margin-bottom: 23px
+  &__icon_green
+    margin-right: 18px
+    width: 24px
+    height: 24px
+  &__article
+    &:first-of-type
+      
+      
+    &_title
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: #959EAD
+      margin: 0
+      margin-bottom: 8px
+    &_text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      color: #5A7184
+      margin: 0
+.mt-5
+  margin-top: 0!important
   
+
+
   
 .accordion
   background-color: #FFFFFF
   color: #444
   cursor: pointer
-  width: 100%
   border: none
   outline: none
   transition: 0.4s
-  max-width: 520px
-  padding: 0 32px
+  width: 520px
+  overflow: hidden
   background: #FFFFFF
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
   border-radius: 8px 8px 16px 16px
@@ -26,5 +101,89 @@
   line-height: 24px
   letter-spacing: 0.2px
   color: #183B56
-  &-block
-   
+.btn
+  padding: 27px 31px
+  font-family: HKGroteskBold
+  font-style: normal
+  font-weight: bold
+  font-size: 20px
+  line-height: 24px
+  color: #183B56
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-color: #ffffff
+  border: none
+  outline: none
+  word-spacing: -2px
+  border-left: none
+  border-right: none
+.mb-0
+  outline: none
+.card
+  background-color: #ffffff
+  &-header
+    background-color: #fff
+    padding: 0 
+  &-body
+    padding: 7px 31px
+    font-size: 16px
+    line-height: 28px
+  &__button-1
+    // padding: 37px 31px 0px 33px
+    word-spacing: auto
+    letter-spacing: 0.2px
+
+.reviews
+  &-slider
+    &__item
+      background-color: #0D2436
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: auto
+      max-width: 750px
+      min-height: 336px
+      position: relative
+    &__quotes
+      margin-bottom: 19px
+    &__profile
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 232px
+      
+    &__avatar
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      object-fit: cover
+      
+    &__username
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #FFFFFF
+      margin: 0
+      margin-bottom: 4px
+    &__doing
+      margin: 0
+      font-family: Open Sans
+      font-style: italic
+      font-weight: normal
+      font-size: 14px
+      line-height: 19px
+      color: #5A7184
+    &__text
+      font-family: HKGroteskregular
+      font-style: normal
+      font-weight: normal
+      font-size: 40px
+      line-height: 60px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #B3BAC5
+      margin-bottom: 47px
+    

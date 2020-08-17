@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ehya</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/button.css">
     <link
       rel="stylesheet"
       media="screen"
@@ -16,24 +16,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/menu-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="hero">
-      <!-- <img
-        src="img/Shape-1.svg"
-        alt="background-Shape"
-        class="hero__bcg-left"
-      /> -->
-      <!-- <img
-        src="img/Shape-2.svg"
-        alt="background-Shape"
-        class="hero__bcg-right"
-      /> -->
       <div class="hero-wrapper">
         <div class="container">
           <div class="hero-main">
+            <img src="img/Shape-1.svg" alt="background-Shape" class="hero__bcg-left" />
+            <img src="img/Shape-2.svg" alt="background-Shape" class="hero__bcg-right" />
             <div class="hero-header">
               <a href="#"><img src="img/Logo.svg" alt="logo: ehya" class="logo hero__logo" /></a>
               <nav class="hero-navbar menu">
@@ -177,7 +170,7 @@
                     <a href="#" class="menu__link">Help</a>
                   </li>
                 </ul>
-                <button class="menu__button" data-toggle="modal">
+                <button class="menu__button"  data-toggle="modal">
                   Get it now
                 </button>
               </nav>
@@ -193,11 +186,9 @@
               interfaces
             </p>
             <div class="hero-button">
-              <a href="https://github.com/muscleman-ak" class="hero-button__link">
-                <button class="hero-button__git">
+              <a href="https://github.com/muscleman-ak" class="hero-button__link hero-button__git">
                   <img src="img/git.svg" alt="icon:git" class="hero-button__icon" />
                   View on Github
-                </button>
               </a>
               <button class="hero-button__doc">
                 Documentation
@@ -438,6 +429,22 @@
       <!-- /.container -->
     </section>
     <!-- /.library -->
+    <section class="sponsors">
+      <div class="container">
+        <div class="sponsors-wrapper">
+            <h2 class="sponsors__title title">See all our great sponsors</h2>
+            <button class="sponsors__button blue-text">Become Sponsor</button>
+            <img src="img/airbnb.svg" class="logo-airbnb" alt="logo:airbnb">
+            <img src="img/fitbit.svg" class="logo-fitbit"  alt="logo:fitbit">
+            <img src="img/google-logo.svg" class="logo-google"  alt="logo:google">
+            <img src="img/spotify.svg" class="logo-spotify"  alt="logo:spotify">
+            <img src="img/mapbox.svg" class="logo-mapbox"  alt="logo:/mapbox">
+        </div>
+        <!-- /.sponsors-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.sponsors -->
     <section class="reviews">
       <div class="container">
         <div class="questions">
@@ -447,29 +454,28 @@
             <p class="questions__text mtext">
               Our library starts from the same syntax that millions of JavaScript developers know today.
             </p>
-            <div class="questions__info">
-              <img src="img/Icon-chec-greenk.svg" alt="icon:check" class="qiestions__icon_green">
+            <div class="questions__info questions__info_first">
+              <img src="img/Icon-chec-greenk.svg" alt="icon:check" class="questions__icon_green">
               <div class="questions__article">
                 <h4 class="questions__article_title">Our library are simple</h4>
                 <p class="questions__article_text">Our library makes things simple like never before, by preferring code over configuration.</p>
               </div>
             </div>
             <div class="questions__info">
-              <img src="img/Icon-chec-greenk.svg" alt="icon:check" class="qiestions__icon_green">
+              <img src="img/Icon-chec-greenk.svg" alt="icon:check" class="questions__icon_green">
               <div class="questions__article">
-                <h4 class="questions__article_title">Our library are simple</h4>
-                <p class="questions__article_text">Our library makes things simple like never before, by preferring code over
-                  configuration.</p>
+                <h4 class="questions__article_title">Suit for large apps</h4>
+                <p class="questions__article_text">Using the power of node streams, first gives you fast builds that don't write intermediary.</p>
               </div>
             </div>
 
           </div>
           
-            <div class="container mt-5">
+            <div class=" mt-5">
               <div class="accordion" id="accordionExample">
                 <div class="card">
                   <div class="card-header" id="headingOne">
-                    <h2 class="mb-0"> <button type="button" class="btn btn-block text-left"  data-toggle="collapse"
+                    <h2 class="mb-0"> <button type="button" class="btn btn-block text-left card__button-1"  data-toggle="collapse"
                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How to get started? <img src="img/plus.svg" alt="icon:plus"> </button> </h2>
                   </div>
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -491,7 +497,7 @@
 
                 <div class="card">
                   <div class="card-header" id="headingfour">
-                    <h2 class="mb-0"> <button type="button" class="btn btn-block text-left collapsed" data-toggle="collapse"
+                    <h2 class="mb-0"> <button type="button" class="btn btn-block text-left collapsed " data-toggle="collapse"
                         data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour"> How to create your own module? <img src="img/plus.svg" alt=""></button>  </h2>
                   </div>
                   <div id="collapsefour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -512,15 +518,154 @@
                 
               </div>
             </div>
-           
-          
-         
         </div>
         <!-- /.questions -->
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper reviews-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <img src="img/quotes.svg" alt="quotes" class="reviews-slider__quotes">
+                <p class="reviews-slider__text">
+                  Builds can be the most awful sinkhole for teams to waste their time with - library is a serious win for any project
+                </p>
+                <div class="reviews-slider__profile">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user-avatar.png"
+                    alt="photo: Prison Mike" class="reviews-slider__avatar" />
+                  <div class="user-info">
+                    <h3 class="reviews-slider__username">Bryan Arnoldy</h3>
+                    <span class="reviews-slider__doing">Senior JavaScript Developer</span>
+                  </div>
+                  
+                </div>
+                <!-- /.reviews-slider__profile -->
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.reviews -->
+    <section class="build">
+      
+      <div class="container">
+        
+        <div class="build-wrapper">
+          <h2 class="build__title title">Let’s build something new with Ehya</h2>
+          <div class="build__buttons">
+            <a href="https://github.com/muscleman-ak" class="hero-button__link hero-button__git build__button">
+              <img src="img/git.svg" alt="icon:git" class="hero-button__icon" />
+              View on Github
+            </a>
+            <button class="hero-button__doc">
+              Get it now
+              <img class="hero-button__pic" src="img/arrow-left.svg" alt="arrow-left" />
+            </button>
+          </div>
+          <img src="img/Shape-1.svg" alt="background-Shape" class="build__bcg-left" />
+          <img src="img/Shape-2.svg" alt="background-Shape" class="build__bcg-right" />
+        </div>
+        <!-- /.build-wrapper -->
+      </div>
+    </section>
+    <!-- /.build -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logos">
+            <img src="img/footer-logo.svg" class="footer__logo" alt="logo: ehya" />
+            <p class="mtext footer__text">
+              Build a modern and creative website with crealand
+            </p>
+            <div class="footer-media">
+              <a href="google.com" class="footer-media__icon"><img src="img/footer-google.svg" alt="icon:google" /></a>
+              <a href="twitter.com" class="footer-media__icon"><img src="img/footer-twitter.svg" alt="icon:twitter" /></a>
+              <a href="instagram.com" class="footer-media__icon"><img src="img/footer-instagram.svg"
+                  alt="icon:instagram" /></a>
+    
+              <a href="linkedin.com" class="footer-media__icon"><img src="img/footer-linked.svg" alt="icon:linkedin" /></a>
+            </div>
+          </div>
+          <!-- /.footer-logos -->
+          <ul class="footer__list">
+            <li class="footer__title">Product</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Features</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Landingpage</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Referral Program</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Pricing</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__title">Services</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Design</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Themes</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Illustrations</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">UI Kit</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__title">Company</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__title">More</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">License</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Changelog</a>
+            </li>
+          </ul>
+    
+          <div class="love">
+            <img src="img/footer-heart.svg" alt="icon: heart" class="love-icon" />
+            <span class="love-text">Copyright © 2019. Crafted with love.</span>
+          </div>
+          <!-- /.love -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+
 <!-- !!!!!!!!!!!!!!!!!!!!!! попробуй вложить в контейнер!!!!!!!!!!!!!!!!!!!!!!! -->
     <div class="modal">
       <div class="modal__overlay"></div>
@@ -604,6 +749,7 @@
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/inputmask.js"></script>

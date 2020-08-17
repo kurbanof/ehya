@@ -87,8 +87,20 @@ if(isMobile.any()){
 	body.classList.add('mouse');
 };
 
-  
+  var miSwiper = new Swiper('.reviews-slider', {
+    // Optional parameters
+    
+    loop: true,
+    
+    keyboard: {
+      enabled: true
+    },
+    autoplay: {
+      delay: 10000
+    }
 
+  });
+  mySwiper.slideToLoop(1, 100, true);
 
 });
 
