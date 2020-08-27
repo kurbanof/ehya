@@ -90,9 +90,9 @@ $(document).ready(function () {
       );
     },
   };
-      // let body = document.querySelector("body");
-  // if (isMobile.any()) {
-      // body.classList.add("touch");
+      let body = document.querySelector("body");
+  if (isMobile.any()) {
+      body.classList.add("touch");
       let arrow=document.querySelectorAll('.fa-angle-down');
     for(i=0; i<arrow.length; i++){
 		  	let subMenu=arrow[i].nextElementSibling;
@@ -101,10 +101,11 @@ $(document).ready(function () {
 	  	arrow[i].addEventListener('click', function(){
 		  	subMenu.classList.toggle('open');
         thisArrow.classList.toggle('active');
+        console.log('все отлично')
 		  });
-	  // }
-  // }else{
-    // body.classList.add("mouse");
+	  }
+  }else{
+    body.classList.add("mouse");
   }
 
   var miSwiper = new Swiper(".reviews-slider", {
