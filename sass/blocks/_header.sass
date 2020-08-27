@@ -1,0 +1,177 @@
+.header
+  background-color: $primary
+  position: fixed
+  width: 100%
+  z-index: 1000000000000
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05)
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 26px 0
+    margin: auto
+    border-radius: 12px
+
+  
+
+.menu
+  width: 598px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__list
+    display: flex
+    width: 423px
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__link
+    text-decoration: none
+    color: white
+    &:hover
+      text-decoration: none
+      color: $w
+    &_page-2
+      color: #183B56
+      &:hover
+        color: $primary
+  &__item
+    position: relative
+    &:hover
+      .menu__sub-list
+        opacity: 1
+        visibility: visible
+  &__button
+    padding: 13px 24px
+    color: white
+    font-weight: bold
+    background-color: $primary
+    border: 2px solid white
+    border-radius: 8px
+    &_page-2
+      border-color: $primary
+      border-radius: 50px
+      color: $primary
+      background-color: $w
+  &__sub
+    &-wrapper
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      padding: 32px
+      border-radius: 12px
+      background: #FFFFFF
+    &-list
+      position: absolute
+      margin: 0
+      padding: 0
+      top: 20px
+      left: 0
+      width: 260px
+      height: 338px
+      opacity: 0
+      visibility: hidden
+      transition: 0.2s
+      padding-top: 24px
+      z-index: 100
+    &-item
+      list-style: none
+      position: relative
+      margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
+      &:hover
+        .menu__sub-sub-list
+          opacity: 1
+          visibility: visible
+    &-link
+      text-decoration: none
+      color: $btc
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &:hover
+        font-weight: 600
+        color: #1565D8
+        
+    &-sub
+      &-list
+        position: absolute
+        top: -8px
+        left: 104%
+        width: 242px
+        margin: 0
+        padding: 0
+        opacity: 0
+        visibility: hidden
+        transition: 0.2s
+        box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+        padding: 32px
+        border-radius: 12px
+        background: #FFFFFF
+        
+      &-item
+        list-style: none
+        position: relative
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0
+      &-link
+        text-decoration: none
+        color: $btc
+        
+        &:hover
+          font-weight: 600
+          color: #1565D8
+  &-arrow
+    cursor: pointer
+    margin-left: 15px
+.fas
+  font-size: 14px
+
+.burger
+  width: 23px
+  height: 18px
+  z-index: 10000000000001
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  cursor: pointer
+  &-line
+    background-color: $w
+    height: 2px
+    width: 100%
+    display: block
+    border-radius: 50px
+    &-pg2
+      background-color: $btc
+
+    
+.navbar-mobile
+  position: absolute
+  top: 27px
+  opacity: 0
+  visibility: hidden
+  transition: 0.2s
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+  padding: 32px
+  border-radius: 12px
+  background: #FFFFFF
+  max-height: 490px
+  overflow: scroll
+
+.mobile-vis
+  opacity: 1
+  visibility: visible
+
+.mobile-close
+  display: none
+  cursor: pointer
+  width: 24px
+  height: 24px
+  &__icon
+    width: 16px
+    height: 16px
+    margin: auto
+    display: block

@@ -18,11 +18,9 @@ body.touch .sub-menu__list.open{
 body.touch .sub-sub-menu__list.open{
 	display: block;
 }
-body.touch .arrow {
-	display: block;
-}
 
-@media (max-width:767px){
+
+/* @media (max-width:767px){
 	.wrapper{
 		padding: 15px;
 	}
@@ -51,4 +49,4 @@ body.touch .arrow {
 		border-top: 10px solid #000;
 		border-right: 10px solid transparent;
 	}
-}
+} */
