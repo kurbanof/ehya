@@ -1,18 +1,25 @@
 @media (max-width: 992px)
-  body
-  .container,
+  .title
+    font-size: 31.6px
+    line-height: 40px
+    &-center
+      margin-bottom: 20px
+  .mtext
+    &-center
+      margin-bottom: 48px
+  .container
     max-width: 704px
   .navbar-main
     display: none
   .mobile-close
-    
+    z-index: 100000000000011
     display: block
     position: absolute
     right: 16px
     top: 17px
   .menu
-    top: 100px
-    right: 178px
+    top: 40px
+    right: 88px
     flex-direction: column
     max-width: 304px
     align-items: start
@@ -68,13 +75,14 @@
         display: flex
         justify-content: space-between
         align-items: center  
-  .sponsors
-    display: none
+  
   .burger
     display: flex
   a:hover
     color: red
     font-weight: unset
+  .hide
+    display: none
       
   .landings
     position: relative    
@@ -90,3 +98,155 @@
     
   .open
     display: block
+  
+  
+  .hero
+    background-position-y: 620px
+    &__title
+      font-size: 48px
+      line-height: 60px
+    &__zip-text
+      margin-bottom: 80px
+    &-wave
+      &__card
+        min-height: 226px
+        flex-direction: column
+      &__icon
+        margin-bottom: 24px
+    &-under
+      margin-bottom: 96px
+  .quickstart 
+    padding-bottom: 176px
+    background-position-y: 810px
+  .version
+    margin-left: 7%
+  .js
+    margin-bottom: 90px
+    &__info
+      flex-direction: column
+    &__card
+      padding-top: 36px
+      width: 100%
+      &:nth-child(n+2)
+        border-left: none
+      &:nth-child(-n+3)
+        border-bottom: 1px solid #E5EAF4
+    &__num
+      margin-bottom: 6px
+      font-size: 36px
+      line-height: 42px
+    &__text
+      margin-bottom: 51px
+      max-width: 600px
+  .explore
+    display: none
+    &-block
+      margin-bottom: 48px
+    &-text
+      max-width: 600px
+
+
+      
+  .cards
+    &__item
+      max-width: 100%
+      width: 95.44%
+      align-items: center
+      margin: auto
+      margin-bottom: 16px
+      max-height: 282px;
+    &__text
+      text-align: center
+      max-width: 560px
+      margin-bottom: 18px
+  .questions
+    flex-direction: column
+    &-text
+      // flex-basis: 100%
+  .sponsors
+    padding-top: 90px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      padding-bottom: 76px
+    &__text
+      display: flex;
+      align-items: center
+      flex-direction: column
+    &__title
+      max-width: 378px
+      margin-top: 0
+      margin-bottom: 28px
+    &__logo
+      position: relative
+      width: 100%
+      height: 338px
+      top: 112px
+      left: -62px
+  .questions
+    margin-bottom: 103px
+    &-text 
+      max-width: 100%
+      width: 100%
+      align-items: center
+    &__title
+      text-align: center
+      margin-bottom: 34px
+    &__text
+      max-width: 463px
+      text-align: center
+      margin-bottom: 28px
+    &-wrapper
+      display: flex
+      width: 97%
+      justify-content: space-between
+      margin-bottom: 27px
+    &__article
+      width: 285px
+  .mt-5
+    width: 96%
+  .accordion
+    width: 100%
+  .reviews
+    padding-top: 166px
+    padding-bottom: 92px
+    &-slider
+      &__item
+        max-width: 640px
+      &__text
+        margin-bottom: 40px
+  .build
+    padding: 80px 0 78px 0
+    &-wrapper
+      flex-direction: column
+    &__title
+      text-align: center
+      font-size: 36px
+      line-height: 48px
+      margin-bottom: 44px 
+  .footer
+    &-wrapper
+      padding: 64px 0 64px 0
+    &-grid
+      display: grid
+      grid-template: 262px 262px/ 253px repeat(2, 1fr)
+      grid-gap: 48px  30px
+      &__product
+        margin-left: 27px
+      &__company
+        grid-area: 2/2
+        margin-left: 27px
+      &__more
+        grid-area: 2/3
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__item
+      margin-bottom: 22px
+  .love
+    margin-top: 16px
+    
+
+    

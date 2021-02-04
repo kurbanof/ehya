@@ -142,13 +142,14 @@ $(document).ready(function () {
 
   const burger = $('.burger');
   burger.on("click", function () {
-    $('.navbar-mobile').toggleClass('mobile-vis')
+    $('.navbar-mobile').toggleClass('mobile-vis');
+    $(this).toggleClass('hide');
   });
 
 
   const mobileClose = $('.mobile-close');
   mobileClose.on('click', function () {
     $('.navbar-mobile').removeClass('mobile-vis');
-    console.log('все отлично')
+    burger.removeClass('hide');
   })
 });
