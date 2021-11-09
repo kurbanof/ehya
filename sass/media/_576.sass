@@ -1,23 +1,27 @@
 @media ( max-width: 576px  )
-  
+
   .container
     max-width: 92%
     min-width: 272px
   .hero
     background-position-y: 499px
-    background-size: 5500px
+    background-size: 0px
+    &__title
+      font-size: 38px
+      line-height: 50px
+
     &-wave
       display: flex
       flex-direction: column
       &__card
         width: 100%
-        max-height: 220px 
+        max-height: 220px
         align-items: center
         padding: 32px
         margin: 0
         &:first-child
           margin-bottom: 16px
-      &__icon 
+      &__icon
         margin-right: 0px
         margin-bottom: 20px
       &__title
@@ -37,8 +41,8 @@
       flex-direction: column
   .version
     flex-direction: column
-    
-    &__require 
+
+    &__require
       margin-bottom: 15px
   .sponsors
     &__logo
@@ -70,6 +74,5 @@
   .build
     &__buttons
       flex-direction: column
-    
-
-
+  .quickstart
+    background-size: 0px

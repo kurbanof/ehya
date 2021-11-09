@@ -12,8 +12,6 @@
     margin: auto
     border-radius: 12px
 
-  
-
 .menu
   width: 598px
   display: flex
@@ -51,6 +49,9 @@
     background-color: $primary
     border: 2px solid white
     border-radius: 8px
+    &:hover
+      background-color: #fff
+      color: $primary
     &_page-2
       border-color: $primary
       border-radius: 50px
@@ -94,7 +95,7 @@
       &:hover
         font-weight: 600
         color: #1565D8
-        
+
     &-sub
       &-list
         position: absolute
@@ -110,7 +111,7 @@
         padding: 32px
         border-radius: 12px
         background: #FFFFFF
-        
+
       &-item
         list-style: none
         position: relative
@@ -120,7 +121,7 @@
       &-link
         text-decoration: none
         color: $btc
-        
+
         &:hover
           font-weight: 600
           color: #1565D8
@@ -129,6 +130,9 @@
     margin-left: 15px
 .fas
   font-size: 14px
+  transform: translateY(1px)
+  &::before
+    margin-left: 2px
 
 .burger
   width: 23px
@@ -147,7 +151,6 @@
     &-pg2
       background-color: $btc
 
-    
 .navbar-mobile
   position: absolute
   top: 27px

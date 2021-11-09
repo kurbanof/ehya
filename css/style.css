@@ -509,6 +509,11 @@ a:hover {
   border-radius: 8px;
 }
 
+.menu__button:hover {
+  background-color: #fff;
+  color: #1565D8;
+}
+
 .menu__button_page-2 {
   border-color: #1565D8;
   border-radius: 50px;
@@ -619,6 +624,12 @@ a:hover {
 
 .fas {
   font-size: 14px;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.fas::before {
+  margin-left: 2px;
 }
 
 .burger {
@@ -774,6 +785,13 @@ a:hover {
   padding: 16px 27px 15px 37px;
   margin-right: 16px;
   z-index: 9;
+}
+
+.hero-button__git:hover {
+  background-color: #1565D8;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 14px 25px 13px 35px;
 }
 
 .hero-button__icon {
@@ -1018,6 +1036,14 @@ a:hover {
   margin-right: 12px;
 }
 
+.dSign {
+  color: #5A7184;
+}
+
+.gSign {
+  color: #00B8D9;
+}
+
 .library {
   background: -webkit-gradient(linear, left top, left bottom, from(#F8FBFF), to(rgba(250, 251, 251, 0.0001)));
   background: linear-gradient(180deg, #F8FBFF 0%, rgba(250, 251, 251, 0.0001) 100%);
@@ -1196,6 +1222,11 @@ a:hover {
   border-radius: 50px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.sponsors__button:hover {
+  background-color: #1565D8;
+  color: #ffffff;
 }
 
 .logo-airbnb {
@@ -1552,16 +1583,17 @@ a:hover {
   z-index: 99;
 }
 
+.hero-button__doc:hover {
+  background-color: #fff;
+  color: #1565D8;
+}
+
 .header-price {
   background-color: #ffffff;
 }
 
-.price {
-  padding-top: 194px;
-}
-
 .price-wrapper {
-  padding: 0 55px 237px 67px;
+  padding: 140px 55px 137px 67px;
 }
 
 .price__heading_text {
@@ -1574,8 +1606,6 @@ a:hover {
 
 .price__heading_title {
   margin: auto;
-  font-size: 56px;
-  line-height: 68px;
   margin-bottom: 26px;
 }
 
@@ -1743,6 +1773,8 @@ a:hover {
 }
 
 .hidden {
+  -webkit-transition: .3s;
+  transition: .3s;
   display: none;
 }
 
@@ -1789,6 +1821,11 @@ a:hover {
 .switch-on::after {
   left: 33px;
   background: #3F598A;
+}
+
+.sNew {
+  font-size: 40px;
+  line-height: 46px;
 }
 
 .footer-wrapper {
@@ -2155,6 +2192,13 @@ a:hover {
   .questions-text {
     max-width: 412px;
   }
+  .price-wrapper {
+    padding: 140px 0px 137px 0px;
+  }
+  .option__card {
+    width: 300px;
+    padding: 48px 25px 40px 25px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2297,6 +2341,7 @@ a:hover {
   }
   .hero {
     background-position-y: 620px;
+    padding-top: 110px;
   }
   .hero__title {
     font-size: 48px;
@@ -2319,7 +2364,7 @@ a:hover {
     margin-bottom: 96px;
   }
   .quickstart {
-    padding-bottom: 176px;
+    padding-bottom: 90px;
     background-position-y: 810px;
   }
   .version {
@@ -2496,7 +2541,7 @@ a:hover {
     -ms-grid-rows: 262px 262px;
     -ms-grid-columns: 253px (1fr)[2];
         grid-template: 262px 262px/253px repeat(2, 1fr);
-    grid-gap: 48px  30px;
+    grid-gap: 48px 30px;
   }
   .footer-grid__product {
     margin-left: 27px;
@@ -2521,6 +2566,19 @@ a:hover {
   }
   .love {
     margin-top: 16px;
+  }
+  .option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .option__card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .price-wrapper {
+    padding: 90px 0;
   }
 }
 
@@ -2620,7 +2678,11 @@ a:hover {
   }
   .hero {
     background-position-y: 499px;
-    background-size: 5500px;
+    background-size: 0px;
+  }
+  .hero__title {
+    font-size: 38px;
+    line-height: 50px;
   }
   .hero-wave {
     display: -webkit-box;
@@ -2722,6 +2784,9 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .quickstart {
+    background-size: 0px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2762,6 +2827,9 @@ a:hover {
   }
   .js__info {
     max-width: 100%;
+  }
+  .option__text {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

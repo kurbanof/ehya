@@ -55,14 +55,19 @@ $(document).ready(function () {
 
   var tabsItem = $(".tabs__item");
   var exampleItem = $(".example__item");
-
+  
   tabsItem.on("click", function (event) {
     var activeExample = $(this).attr("data-target");
+    console.log(this);
+    console.log($(this).attr("data-target"));
     exampleItem.removeClass("example__item_active");
     tabsItem.removeClass("tabs__item_active");
     $(activeExample).addClass("example__item_active");
     $(this).addClass("tabs__item_active");
   });
+  document.querySelector('.tabs__item').classList.add("tabs__item_active");
+  document.querySelector(".example__item").classList.add("example__item_active");
+
 
   let isMobile = {
     Android: function () {
@@ -90,20 +95,20 @@ $(document).ready(function () {
       );
     },
   };
-      // let body = document.querySelector("body");
+  // let body = document.querySelector("body");
   // if (isMobile.any()) {
-      // body.classList.add("touch");
-      let arrow=document.querySelectorAll('.fa-angle-down');
-    for(i=0; i<arrow.length; i++){
-		  	let subMenu=arrow[i].nextElementSibling;
-		  	let thisArrow=arrow[i];
+  // body.classList.add("touch");
+  let arrow = document.querySelectorAll('.fa-angle-down');
+  for (i = 0; i < arrow.length; i++) {
+    let subMenu = arrow[i].nextElementSibling;
+    let thisArrow = arrow[i];
 
-	  	arrow[i].addEventListener('click', function(){
-		  	subMenu.classList.toggle('open');
-        thisArrow.classList.toggle('active');
-		  });
-	  // }
-  // }else{
+    arrow[i].addEventListener('click', function () {
+      subMenu.classList.toggle('open');
+      thisArrow.classList.toggle('active');
+    });
+    // }
+    // }else{
     // body.classList.add("mouse");
   }
 
